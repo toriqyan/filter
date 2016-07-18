@@ -9,7 +9,7 @@ function setup() {
 	if (isNaN(index)) {
 		index = 0;
 	}
-	if (index == len(urls)) {
+	if (index == urls.length) {
 		alert("Done!");
 		index = 0;
 	}
