@@ -14,7 +14,7 @@ def index(request):
     print(request)
     db_rows = Task.objects.all()
     render_data = {
-        "image_index": str(len(db_rows)),
+        "image_index": str(len(db_rows)+1),
     }
     if request.GET.get("image"):
         Task.objects.create(
