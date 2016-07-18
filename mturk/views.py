@@ -18,7 +18,7 @@ def index(request):
     # else: 
     #     i =len(db_rows)
     if (request.GET.get("imageIndex", "") == ""):
-        i = "0"
+        i = str(len(db_rows))
     else:
         i = str(int(request.GET.get("imageIndex", ""))+1)
     render_data = {
