@@ -15,7 +15,7 @@ def index(request):
         image = request.GET.get("image", ""),
         reject = request.GET.get("reject",""),
     )
-    db_rows = Task.objects.filter(workerId = request.GET.get("workerId", ""))
+    db_rows = Task.objects.all()
     render_data = {
         "image_index": str(len(db_rows)),
     }
