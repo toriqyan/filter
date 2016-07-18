@@ -11,6 +11,7 @@ from mturk.models import Task
 
 @csrf_exempt
 def index(request):
+    print(request)
     db_rows = Task.objects.all()
     render_data = {
         "image_index": str(len(db_rows)),
