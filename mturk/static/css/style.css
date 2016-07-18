@@ -12,7 +12,7 @@ h3 { font-size: 24px; margin: 30px 0 20px 0; }
 h4 { font-size: 20px; margin: 30px 0 10px 0;}
 h5 { font-size: 18px; margin: 30px 0 5px 0;}
 h6 { font-size: 18px; margin: 10px 0 0 0;}
-p { font-size: 18px; line-height: 22px; margin: 0 0 15px 0; }
+p { font-size: 20px; line-height: 25px; margin: 0 0 15px 0; }
 a { text-decoration: none; color: #0b8bbb; }
 a:hover { color: #eee; }
 .line { clear: both; border-bottom: 2px #eee solid; }
@@ -41,8 +41,52 @@ a:hover { color: #eee; }
 #content .cv-section p { font-size: 14px; color: #555; letter-spacing: 0; }
 #content .cv-section-item { padding: 0 0 15px 0; }
 
-form {
+#amazon {
    display: none;
+}
+
+#target {
+  width:500px;
+  display: block;
+}
+
+#reject {
+  float:left;
+}
+
+#rej_ref img {
+  height:200px;
+  display: inline-block;
+  vertical-align: center;
+}
+
+#rej_ref ul {
+   list-style-type: none;
+   display: inline-block;
+}
+#rej_ref li {
+   display: inline;
+   float:left;
+   margin-right: 20px;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+  z-index: 9;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 5px;
+}
+
+fieldset {
+  margin-top: 20px;
+  width:300px;
 }
 
 input[type="radio"]
@@ -50,8 +94,19 @@ input[type="radio"]
   margin:10px;
 }
 
-#images input {
-  margin:10px;
+button {
+   width: 65px;
+   height: 30px;
+   margin: 20px;
+   /*margin-top: 20px;*/
+   /*margin-bottom: 20px;*/
+   display: inline-block;
+   /*border: 1px solid #006;*/
+   background-color: transparent;
+   background-repeat: no-repeat;
+   font-size: 100%;
+   text-align: center;
+   vertical-align: center;
 }
 
 .imagewrap {
@@ -60,7 +115,7 @@ input[type="radio"]
    /*border:2px solid #CCC;*/
    margin: 10px;
    /*height: 200px;*/
-   /*width: 650px;*/
+   /*width: 300px;*/
    padding: 20px;
    /*float: left;*/
    display: inline-block;
@@ -80,50 +135,48 @@ input[type="radio"]
    transition: all 1s ease;
 }
 
-button {
-   width: 60px;
-   height: 30px;
-   margin-right: 20px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   display: inline-block;
-   /*border: 1px solid #006;*/
-   background-color: transparent;
-   background-repeat: no-repeat;
-   font-size: 100%;
-   text-align: center;
-   vertical-align: center;
-}
 .imagewrap ul {
    list-style-type: none;
    display: inline;
 }
 .imagewrap li {
-   display: inline-block;
+   display: inline;
+   float:left;
 }
 
-#images img {
+.images img {
    width: 350px;
    padding-right: 20px;
    display: inline-block;
    /*float:left;*/
+   /*clear: left;*/
 }
 
-#images fieldset {
+.images input {
+  margin:10px;
+}
+
+.images fieldset {
    float: right;
 }
-#images {
+.images {
    list-style-type: none;
    /*display: block;*/
 }
 
-.css-treeview ul,
-.css-treeview li
+.css-treeview ul
 {
    padding: 0;
    margin: 0;
    list-style: none;
    display:block;
+}
+
+.css-treeview li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display:inline;
 }
 
 .css-treeview input:checked + label + ul > li
@@ -140,7 +193,6 @@ button {
 
 .css-treeview
 {
-   /*font: normal 11px "Segoe UI", Arial, Sans-serif;*/
    -moz-user-select: none;
    -webkit-user-select: none;
    user-select: none;
@@ -150,16 +202,6 @@ button {
 .css-treeview input + label + ul
 {
    margin: 0 0 0 22px;
-}
-
-.css-treeview input[type="text"]
-{
-   margin-left: 10px;
-   width: 20px;
-}
-
-.css-treeview input + label + ul
-{
    display: none;
 }
 
@@ -176,7 +218,6 @@ button {
 .css-treeview input:checked:not(:disabled) + label + ul
 {
    display: block;
-   /*border: 1px red solid; */
 }
 
 .css-treeview label
@@ -184,10 +225,11 @@ button {
    background-position: 0 0;
 }
 
-.css-treeview input[type="checkbox"]
+.css-treeview input
 {
   margin-left: 20px;
   margin-right: 0px;
+  clear:both;
 }
 
 .css-treeview label::before
@@ -204,11 +246,17 @@ button {
    background-position: 0 -16px;
 }
 
+#Handbag li {
+  display: inline-block;
+  padding: 5px;
+}
+
 .ui-resizable.ui-resizable-resizing,
 .ui-resizable.ui-draggable-dragging
 { border:2px dashed red !important; }
 
 .selected { background:#ffffff; }
+
 #segment p {
     width: 18px;
     height: 18px;
@@ -220,8 +268,24 @@ button {
     background-color: black;
 }
 
+.queMark {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+  z-index: 9;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#segment {
+  margin-bottom: 50px;
+  width:500px;
+  display: inline-block;
+}
+
 #Canvas {
   display: inline-block;
-  margin-bottom: 50px;
   width:500px;
 }

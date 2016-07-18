@@ -8,60 +8,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js" type="text/javascript"></script>
 
-   <script type="text/javascript" src="/static/js/images.js"></script>
-   <script type="text/javascript" src="/static/js/main.js"></script>
-
-   <!-- <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
-   <link rel="stylesheet" href="/static/css/style.css" />
+   <script type="text/javascript" src="images.js"></script>
+   <script type="text/javascript" src="main.js"></script>
+   <link rel="stylesheet" href="style.css" />
    
    <title>Fashion Tags</title>
 </head>
 <body>
-   <form id="amazon" action="{{ amazon_host }}" method="POST">
-      <textarea rows="4" cols="50" name="user-input">
-      </textarea>
-      <input type="hidden" id="assignmentId" value="{{ assignment_id }}" name="assignmentId"/>
-      <br/>
-      <input type="hidden" id="workerId" value="{{ worker_id }}" name="workerId"/>
-      <input type="hidden" id="hitId" value="{{ hit_id }}" name="hitId"/>
-      <input type="submit">
-  </form>
+   
    <div id="wrap">
-      <h1 id ="header">Tag fashion photos</h1>
-      <div id ="description">
-         <!-- <h2>Instruction</h2>  -->
-         <p>In this task, you'll be asked to tag the provided picture</p>
-         <h3>General Instructions:</h3>
-         <p>You will be given a fashion photo in this task. In the first part, 
-            you will be selecting the corrent tags for the outfit or the model in the photo. In the second part, you will be asked to mark the individual clothing item in the photo and tag them. Further instruction and reference can be found later.
-         </p>
-
-         <h3>Notes:</h3>
-         <p>Please remember to accept the task before you do it; otherwise, we cannot pay you!</p>
-         <p>The task would auto submit when reached the end.</p>
-         <p>Rejection: <br>
-            We will have trick questions in this task. If you give out inconsistent answers, we will reject your submission.
-         </p>
-
-         <h3>Now click NEXT button to start the task!</h3>
-         <p>-----------------------------------------------------------------------------------------------------------------------------</p>
-      </div>
+      <h1 id ="header">Reject/Accept fashion photos</h1>
       
-      <div id= "task"></div>
-      <button class="pure-button" name="clear" id="clear" type="button" onClick="clearBox()">Clear</button>
-      <div id="instruction">
-         <h3>Instruction for body segment and item detail</h3>
-         <p>First, draw item box on the image, i.e. box top, bottom, dress, 
-            accessories if applicable.
-         </p>
-         <img src="/static/js/segment.png" alt="img">
-         <p>Then describe each item using the list we offer below</p>
-         <img src="/static/js/item.png" alt="img">
-         <button class="pure-button" name="next" onclick="$('#next').click()" type="button">Next</button>
+      <div id="rejection">
+         <img id="target" src="">
+         <button name="reject" id="reject" type="reject" onClick="reject()">Reject</button>
+         <button name="accept" id="accept" type="accept" onClick="accept()">Accept</button>
       </div>
-      <div id= "segment" class="col_two"></div>
-      <div id= "items" class="css-treeview"></div>
-      <button class="pure-button" name="next" id="next" type="button">Next</button>
-      <h2 id="end">Congrats! The end of task! Please submit!</h2>
+      <form id="database" action="#" method="GET">
+         <input type="hidden" id="imageIndex" value="{{ image_index }}" name="imageIndex"/>
+         <input type="hidden" id="image" value="" name="imageUrl"/>
+         <input type="hidden" id="reject" value="" name="reject"/>
+         <input type="submit">
+      </form>
    </div><!--end wrap-->
 </body>
