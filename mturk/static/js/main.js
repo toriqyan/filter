@@ -19,7 +19,7 @@ function reject() {
 function accept() {
 
 	document.getElementById('image').value = urls[index];
-	document.getElementById('accpet').value = 'yes';
-	$('#accept').submit();
+	document.getElementById('reject').value = 'no';
+	$('#database').submit();
 }
 
