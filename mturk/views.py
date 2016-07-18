@@ -11,15 +11,14 @@ from mturk.models import Task
 
 @csrf_exempt
 def index(request):
-    Task.objects.create(
-        image = request.GET.get("image", ""),
-        reject = request.GET.get("reject",""),
-    )
     db_rows = Task.objects.all()
     render_data = {
         "image_index": str(len(db_rows)),
     }
-
+    Task.objects.create(
+        image = request.GET.get("image", ""),
+        reject = request.GET.get("reject",""),
+    )
     response = render_to_response("index.html", render_data)
     # without this header, your iFrame will not render in Amazon
     response['x-frame-options'] = 'this_can_be_anything'
