@@ -103,6 +103,7 @@ button {
    font-size: 100%;
    text-align: center;
    vertical-align: center;
+   float:left;
 }
 
 .imagewrap {
