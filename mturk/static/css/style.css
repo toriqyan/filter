@@ -50,10 +50,6 @@ a:hover { color: #eee; }
   display: inline-block;
 }
 
-#reject {
-  float:left;
-}
-
 #rej_ref img {
   height:200px;
   display: inline-block;
