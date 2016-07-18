@@ -16,7 +16,7 @@ def index(request):
     render_data = {
         "image_index": str(len(db_rows)),
     }
-    if request.GET.get("reject"):
+    if request.GET.get("image"):
         Task.objects.create(
             image = request.GET.get("image", ""),
             reject = request.GET.get("reject",""),
