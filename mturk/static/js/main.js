@@ -6,6 +6,13 @@ $(document).ready(function() {
 
 function setup() {
 	index = parseInt(document.getElementById("imageIndex").value);
+	if (isNaN(index)) {
+		index = 0;
+	}
+	if (index == len(urls)) {
+		alert("Done!");
+		index = 0;
+	}
 	document.getElementById("target").src = urls[index];
 }
 
