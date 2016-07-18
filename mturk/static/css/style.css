@@ -47,7 +47,7 @@ a:hover { color: #eee; }
 
 #target {
   width:500px;
-  display: block;
+  display: inline-block;
 }
 
 #reject {

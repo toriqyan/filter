@@ -15,10 +15,11 @@ def index(request):
     render_data = {
         "image_index": str(len(db_rows)),
     }
-    Task.objects.create(
-        image = request.GET.get("image", ""),
-        reject = request.GET.get("reject",""),
-    )
+    if request.GET.get("reject"):
+        Task.objects.create(
+            image = request.GET.get("image", ""),
+            reject = request.GET.get("reject",""),
+        )
     response = render_to_response("index.html", render_data)
     # without this header, your iFrame will not render in Amazon
     response['x-frame-options'] = 'this_can_be_anything'
