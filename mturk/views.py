@@ -4,9 +4,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
-import random
+from mturk.models import Task
 
-AMAZON_HOST = "https://workersandbox.mturk.com/mturk/externalSubmit"
+# AMAZON_HOST = "https://workersandbox.mturk.com/mturk/externalSubmit"
 # AMAZON_HOST = "https://www.mturk.com/mturk/externalSubmit"
 
 @csrf_exempt
