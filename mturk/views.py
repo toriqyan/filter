@@ -17,8 +17,12 @@ def index(request):
     #     i = -1
     # else: 
     #     i =len(db_rows)
+    if (request.GET.get("imageIndex", "") != ""):
+        i = "0"
+    else:
+        i = str(int(request.GET.get("imageIndex", ""))+1)
     render_data = {
-        "image_index": str(int(request.GET.get("imageIndex", ""))+1),
+        "image_index": i,
     }
     if request.GET.get("image"):
         Task.objects.create(
