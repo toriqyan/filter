@@ -8,6 +8,14 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+ROOT_PATH = os.path.dirname(__file__)
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = os.path.join(ROOT_PATH, 'notes.sqlite')
+MEDIA_ROOT = os.path.join(ROOT_PATH, 'media')
+MEDIA_URL = 'http://127.0.0.1:8000/media/'
+TEMPLATE_DIRS = (
+    os.path.join(ROOT_PATH, 'templates'),
+)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
