@@ -13,12 +13,12 @@ from mturk.models import Task
 def index(request):
     print(request)
     db_rows = Task.objects.all()
-    if len(db_rows)==0:
-        i = -1
-    else: 
-        i =len(db_rows)
+    # if len(db_rows)==0:
+    #     i = -1
+    # else: 
+    #     i =len(db_rows)
     render_data = {
-        "image_index": str(i+1),
+        "image_index": str(int(request.GET.get("imageIndex", ""))+1),
     }
     if request.GET.get("image"):
         Task.objects.create(
