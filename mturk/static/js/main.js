@@ -190,12 +190,12 @@ function nextstep() {
 		} else if(step < PAGES) {
 			var out = "";
 			for (var i = image_index-TOTAL+(step-1)*ELENUM; i < image_index-TOTAL+step*ELENUM; i++) {
-				var result = i;
+				var result = "";
 				$('#images'+i+' input:checked').each(function() {
 					var cur_tag = $(this).val();
-					result+=" "+cur_tag+"\n";
+					result+=i+" "+cur_tag+"\n";
 				});
-				if (result == i) {
+				if (result == "") {
 					alert("You have to select a tag for image" + (i-image_index+TOTAL-(step-1)*ELENUM+1));
 					return;
 				}
@@ -208,12 +208,12 @@ function nextstep() {
 			$('#'+target+(step-1)).hide();
 		} else {
 			for (var i = image_index-TOTAL+(step-1)*ELENUM; i < image_index-TOTAL+step*ELENUM; i++) {
-				var result = i;
+				var result = "";
 				$('#images'+i+' input:checked').each(function() {
 					var cur_tag = $(this).val();
-					result+=" "+cur_tag+"\n";
+					result+=i+" "+cur_tag+"\n";
 				});
-				if (result == i) {
+				if (result == "") {
 					alert("You have to select a tag for image" + (i-image_index+TOTAL-(step-1)*ELENUM+1));
 					return;
 				}
