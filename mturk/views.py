@@ -20,8 +20,8 @@ def index(request):
             "image_index": "0",
         }
     else:
-        record = Task.objects.all()[0].occasion
-        Task.objects.all()[0].occasion+=10
+        record = Task.objects.all()[0].style
+        Task.objects.all()[0].style+=10
         render_data = {
             "worker_id": request.GET.get("workerId", ""),
             "assignment_id": request.GET.get("assignmentId", ""),
