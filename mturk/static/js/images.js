@@ -10079,5 +10079,4 @@ var len = urls.length;
 // out+='</ul>';
 // document.getElementById("images").innerHTML = out;
 
-var ran = Math.floor(Math.random() * len);
-var images=urls[ran];
+// var ran = Math.floor(Math.random() * len);

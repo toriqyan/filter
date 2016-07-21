@@ -4,7 +4,7 @@
 /* -------------------- */
 /* -- General Styles -- */
 /* -------------------- */
-#wrap { width: 730px; margin: 70px auto; font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; color: #555; border: 1px #eee solid; padding: 70px 70px 20px 70px; -webkit-box-shadow: 0px 0 50px #aaa; -moz-box-shadow: 0px 0 30px #aaa; box-shadow: 0px 0 50px #aaa; background: #fff; background: -moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(2%,#FFFFFF)); }
+#wrap { width: 80%; margin: 70px auto; font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; color: #555; border: 1px #eee solid; padding: 70px 70px 20px 70px; -webkit-box-shadow: 0px 0 50px #aaa; -moz-box-shadow: 0px 0 30px #aaa; box-shadow: 0px 0 50px #aaa; background: #fff; background: -moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(2%,#FFFFFF)); }
 body { font-family: times, serif; background-color: #eee; }
 h1 { font-size: 35px; margin: 0 0 10px 0; letter-spacing: -1px; }
 h2 { font-size: 34px; margin: 0 0 20px 0; }
@@ -20,7 +20,7 @@ a:hover { color: #eee; }
 /* ------------ */
 /* -- Header -- */
 /* ------------ */
-#header { float: left; width: 730px; margin: 0 0 30px 0; }
+#header { width: 730px; margin: 0 0 30px 0; }
 #header #header-content { float: left; width: 450px; }
 #header #header-content h1 { margin: 0 0 2px 0; color: #444; }
 #header #header-content h2 { color: #0b8bbb; font-size: 28px; }
@@ -41,13 +41,21 @@ a:hover { color: #eee; }
 #content .cv-section p { font-size: 14px; color: #555; letter-spacing: 0; }
 #content .cv-section-item { padding: 0 0 15px 0; }
 
+#amazon {
+   display: none;
+}
+
 #database {
    display: none;
 }
 
 #target {
   width:500px;
-  display: inline-block;
+  display: block;
+}
+
+#reject {
+  float:left;
 }
 
 #rej_ref img {
@@ -80,11 +88,6 @@ a {
   margin-left: 5px;
 }
 
-fieldset {
-  margin-top: 20px;
-  width:300px;
-}
-
 input[type="radio"]
 {
   margin:10px;
@@ -103,7 +106,10 @@ button {
    font-size: 100%;
    text-align: center;
    vertical-align: center;
-   float:left;
+}
+
+#task li {
+
 }
 
 .imagewrap {
@@ -132,20 +138,21 @@ button {
    transition: all 1s ease;
 }
 
-.imagewrap ul {
+#task ul {
    list-style-type: none;
-   display: inline;
+   display: inline-block;
 }
-.imagewrap li {
+#task li {
    display: inline;
    float:left;
+   width:50%;
 }
 
 .images img {
-   width: 350px;
-   padding-right: 20px;
+   height: 350px;
+   /*padding-right: 20px;*/
    display: inline-block;
-   /*float:left;*/
+   float:left;
    /*clear: left;*/
 }
 
@@ -154,7 +161,8 @@ button {
 }
 
 .images fieldset {
-   float: right;
+   float: left;
+   margin: 15px;
 }
 .images {
    list-style-type: none;
@@ -180,12 +188,6 @@ button {
 {
   display: inline-block;
   padding: 5px;
-}
-
-.css-treeview input
-{
-   /*position: absolute;*/
-   /*opacity: 0;*/
 }
 
 .css-treeview
