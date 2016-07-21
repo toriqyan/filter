@@ -46,11 +46,11 @@ var references = {
 };
 var inst = 
 {
-	"occasion":"Please tag which occasion(s) this outfit is appropriate for: Work, Special Occasion, Weekend Casual, or Date night/Dining out. Select all that applies.",
-	"style":"Please tag which style(s) this outfit is: Classic, Trendy, Bohemian, Dramatic, Feminine, Punk Rock or Other. Select all that applies.",
-	"season":"Please tag which season(s) this outfit is good for: Spring, Summer, Fall or Winter. Select all that applies.",
-	"ethnicity":"Please tag the ethnicity of the model in the picture: Caucasian, African American, Latino, Asian or Other.",
-	"body-shape":"Please tag the model’s body size: Slim, Full or Plus.",
+	"Occasion":"Please tag which occasion(s) this outfit is appropriate for: Work, Special Occasion, Weekend Casual, or Date night/Dining out. Select all that applies.",
+	"Style":"Please tag which style(s) this outfit is: Classic, Trendy, Bohemian, Dramatic, Feminine, Punk Rock or Other. Select all that applies.",
+	"Season":"Please tag which season(s) this outfit is good for: Spring, Summer, Fall or Winter. Select all that applies.",
+	"Ethnicity":"Please tag the ethnicity of the model in the picture: Caucasian, African American, Latino, Asian or Other.",
+	"Body-shape":"Please tag the model’s body size: Slim, Full or Plus.",
 };
 var tag_exp = 
 {
