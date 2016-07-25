@@ -133,8 +133,8 @@ function setupTag() {
 			out+='</ul>';
 			// }
 			// if (category == "ethnicity" ||category =="body-shape") {
-			button_sec+='<div class="radio"><label><input name=\"'
-				+category+'Answer\" type=\"radio\" value=\"'+option
+			button_sec+='<div class="checkbox"><label><input name=\"'
+				+category+'Answer\" type=\"checkbox\" value=\"'+option
 				+'\" />'+option+'</label></div>';
 			// } else {
 				// button_sec+='<div class="checkbox"><label><input name=\"'
