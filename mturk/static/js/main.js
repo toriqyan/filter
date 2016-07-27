@@ -56,7 +56,7 @@ var features={
 		"Cardigan-length":["Cropped","Normal","Long","Very-long"]
 	},
 	"Shoes":{
-		"category":["Pumps","Sandals","Mules","Clogs","Ballerina","Espadrille","Loafers","Sneakers","Flip-flop","Ankle-boots","Boots","Western-boots","Oxford"],
+		"category":["Pumps","Sandals(Open-toe)","Mules","Clogs","Flats","Loafers/Oxford","Sneakers","Ankle-boots","Boots"],
 		"feature":{
 			"Heel":["Flat", "Low", "High"],
 			"Color": ["Aqua","Black","Blue","Brown","Coral/Orange","Green","Grey","Gold","Nude","Pink","Peach","Purple","Red","Silver","Taupe","Teal","White","Yellow","Other"],
@@ -71,7 +71,7 @@ var seg_ref = {
 	"Bottom_Jeans_Style": "https://s-media-cache-ak0.pinimg.com/564x/f1/95/60/f19560e706ef2ef3f97983f7a8cad4cd.jpg",
 	"Bottom_Pants_Style": "https://s-media-cache-ak0.pinimg.com/564x/f1/95/60/f19560e706ef2ef3f97983f7a8cad4cd.jpg",
 	"Outerwear": "https://s-media-cache-ak0.pinimg.com/564x/f0/ef/d2/f0efd2ffd628861cd0f966a8e635ac65.jpg",
-	"Shoes": "https://s-media-cache-ak0.pinimg.com/564x/0b/36/d0/0b36d0615f4bee87ee3054d816e38534.jpg",
+	"Shoes": "https://s-media-cache-ak0.pinimg.com/564x/cf/e6/a1/cfe6a1129505c371f70bca4f2d6c29f0.jpg",
 	"Pattern": "https://s-media-cache-ak0.pinimg.com/564x/cb/32/2e/cb322ed9f98d8f5b7340d308ff168224.jpg",
 	"Neckline": "https://s-media-cache-ak0.pinimg.com/564x/6d/63/30/6d6330a36399a9f230fae05a4184f70f.jpg",
 	"One-piece_Dress_Style": "https://s-media-cache-ak0.pinimg.com/564x/02/3b/96/023b96f16a5d4ce5c91f2ce7c3d2daf7.jpg",
