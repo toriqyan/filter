@@ -220,10 +220,10 @@ function nextstep() {
 					result+=i+" "+cur_tag+" "+urls[i]+"\n";
 					c+=1;
 				});
-				if (c > 3) {
-					alert("Please select no more than 3 options for an image");
-					return;
-				}
+				// if (c > 3) {
+				// 	alert("Please select no more than 3 options for an image");
+				// 	return;
+				// }
 				if (result == "") {
 					alert("You have to select a tag for all images");
 					return;
@@ -257,10 +257,10 @@ function nextstep() {
 					result+=i+" "+cur_tag+" "+urls[i]+"\n";
 					c+=1;
 				});
-				if (c > 3) {
-					alert("Please select no more than 3 options for an image");
-					return;
-				}
+				// if (c > 3) {
+				// 	alert("Please select no more than 3 options for an image");
+				// 	return;
+				// }
 				if (result == "") {
 					alert("You have to select a tag for all images");
 					return;
