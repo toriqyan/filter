@@ -99,7 +99,7 @@ button {
    margin: 20px;
    /*margin-top: 20px;*/
    /*margin-bottom: 20px;*/
-   display: block;
+   display: inline-block;
    /*border: 1px solid #006;*/
    background-color: transparent;
    background-repeat: no-repeat;
@@ -108,14 +108,19 @@ button {
    vertical-align: center;
 }
 
+#task li {
+
+}
+
 .imagewrap {
    /*top: 400px;
    left: 450px ;*/
    /*border:2px solid #CCC;*/
    margin: 10px;
+   font-size:18px ;
    /*height: 200px;*/
    /*width: 300px;*/
-   padding: 20px;
+   /*padding: 20px;*/
    /*float: left;*/
    display: inline-block;
    /*overflow-y: auto;*/
@@ -276,19 +281,12 @@ button {
 }
 
 #segment {
-  width:35%;
-  margin-right: 10px;
+  margin-bottom: 50px;
+  width:500px;
   display: inline-block;
 }
 
 #Canvas {
-  max-width: 100%;
   display: inline-block;
-  width:auto;
-}
-
-#items {
-  display: inline-block;
-  width:60%;
-  clear:both;
+  width:500px;
 }
