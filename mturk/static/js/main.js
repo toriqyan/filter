@@ -1,5 +1,5 @@
 var test = false;
-var target = "Style";
+var target = "Temperature";
 var PAGES = 2;
 var ELENUM = 5;
 var TOTAL = PAGES*ELENUM;
