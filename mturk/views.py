@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from mturk.models import Task
 from django.views.decorators.csrf import csrf_exempt
-NUM = 10
+NUM = 5
 
 # AMAZON_HOST = "https://workersandbox.mturk.com/mturk/externalSubmit"
 AMAZON_HOST = "https://www.mturk.com/mturk/externalSubmit"
