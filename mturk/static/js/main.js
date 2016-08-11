@@ -147,7 +147,7 @@ var radios = ["Neckline","Collar", "Hood", "Sleeve", "Heel", "Size", "Length", "
 var tag_instr = {
 	'Top':'Describe the top you see in the outfit. The outfit may have a sweater or jacket outer layer, but ignore that for this task.',
 	'Bottom':'Describe the bottom you see in the outfit.',
-	'One-piece': 'Describe the one piece (dress or jumpsuit) you see in the outfit. The outfit may have a sweater or jacket outer layer, but ignore that for this task. For dress length,<br> Very-short: mini-skirt length, way above the knee<br> Knee-length: Around or at knee-length<br> Midi: below the knee<br> Full-body: at ankle or floor length<br>',
+	'Dress': 'Describe the dress you see in the outfit. The outfit may have a sweater or jacket outer layer, but ignore that for this task. ',
 	'Outerwear':'Describe the outerwear you see in the outfit. The outfit will have an inner layer, but ignore that for this task. For garment length,<br> Cropped: very short, above or at waist<br> Normal: above or at hip length<br> Long: above or at thig/knee length<br> Very long: below the knee length<br>',
 	'Bags':'Describe the bag you see in the outfit. <br>Clutch: a bag with no handles, no straps.<br>Shoulder bag: a bag with long shoulder straps and no handles.<br>Tote: a bag with handles or really short straps, may or may not have shoulder straps.<br>',
 	'Shoes':'Describe the shoes you see in the outfit.'
