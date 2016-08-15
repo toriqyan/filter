@@ -42,12 +42,13 @@ def index(request):
     if (request.GET.get("user-input", "") != ''):
         Task.objects.create(hit_id = request.GET.get("user-input", ""),
             image_index = i)
+        i+=NUM
     render_data = {
         # "worker_id": request.GET.get("workerId", ""),
         # "assignment_id": request.GET.get("assignmentId", ""),
         # "amazon_host": AMAZON_HOST,
         # "hit_id": request.GET.get("hitId", ""),
-        "image_index": str(i+NUM),
+        "image_index": str(i),
     }
         
 
