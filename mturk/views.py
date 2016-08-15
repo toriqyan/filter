@@ -13,8 +13,8 @@ NUM = 10
 @csrf_exempt
 def index(request):
     print(request.GET.get("user-input", ""))
-    print(request.GET.get("user-input2", ""))
-    print(request.GET.get("imageIndex", ""))
+    print(request.POST.get("user-input2", ""))
+    print(request.POST.get("imageIndex", ""))
     # if request.GET.get("assignmentId") == "ASSIGNMENT_ID_NOT_AVAILABLE" or request.GET.get("assignmentId") =="":
     #     render_data = {
     #         "worker_id": request.GET.get("workerId", ""),
