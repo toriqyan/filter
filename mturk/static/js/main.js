@@ -275,7 +275,7 @@ function nextstep() {
 			$('#end').show();
 			$('#submit').show();
 			document.getElementById('user-input').value = str_result;
-			window.location.reload();
+			$('#amazon').submit();
 		} 
 		step++;
 		// console.log(str_result);
