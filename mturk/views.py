@@ -24,7 +24,12 @@ def index(request):
     #         "image_index": "0",
     #     }
     # else:
-    
+    i = 0
+    a = Task.objects.all()
+    if (len(a) == 0):
+        i = 0
+    else:
+        i = a[len(a)-1].image_index+NUM
     # record = Task.objects.filter(hit_id=request.GET.get("hitId", ""))
     # if (len(record) == 0):
     #     Task.objects.create(
@@ -37,19 +42,12 @@ def index(request):
     if (request.GET.get("user-input", "") != ''):
         Task.objects.create(hit_id = request.GET.get("user-input", ""),
             image_index = i)
-    i = 0
-    a = Task.objects.all()
-    if (len(a) == 0):
-        i = 0
-    else:
-        i = a[len(a)-1].image_index+NUM
-    print(i)
     render_data = {
         # "worker_id": request.GET.get("workerId", ""),
         # "assignment_id": request.GET.get("assignmentId", ""),
         # "amazon_host": AMAZON_HOST,
         # "hit_id": request.GET.get("hitId", ""),
-        "image_index": str(i),
+        "image_index": str(i+NUM),
     }
         
 
