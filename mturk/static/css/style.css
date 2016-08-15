@@ -99,13 +99,17 @@ button {
    margin: 20px;
    /*margin-top: 20px;*/
    /*margin-bottom: 20px;*/
-   display: block;
+   display: inline-block;
    /*border: 1px solid #006;*/
    background-color: transparent;
    background-repeat: no-repeat;
    font-size: 100%;
    text-align: center;
    vertical-align: center;
+}
+
+#task li {
+
 }
 
 .imagewrap {
@@ -276,19 +280,12 @@ button {
 }
 
 #segment {
-  width:35%;
-  margin-right: 10px;
+  margin-bottom: 50px;
+  width:500px;
   display: inline-block;
 }
 
 #Canvas {
-  max-width: 100%;
   display: inline-block;
-  width:auto;
-}
-
-#items {
-  display: inline-block;
-  width:60%;
-  clear:both;
+  width:500px;
 }
