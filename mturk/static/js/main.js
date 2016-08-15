@@ -116,40 +116,41 @@ function setupTag() {
 	var i = 0;
 	var out = "";
 	for (var category in references) {
-		out+='<div class="tag" id="'+category
-			+'"><div class="reference"><p>'+ inst[category] 
-			+'</p>';
-		if (references[category].length >0) {
-			// out+='<h3>For reference: </h3>';
-		}
-		// var button_sec = '<fieldset class=\"'+category +'\">';
-		var button_sec = ''
-		for (var option in references[category]) {
-			// console.log(option);
-			// if (references[category][option].length != 0) {
-			if ((option in tag_exp)) {
-				// out+='<ul class=\"imagewrap\"><legend>'+option+': </legend>';
-			// } else {
-				out+='<ul class=\"imagewrap\"><legend style="width:300px;">'+option+': '+tag_exp[option]+'</legend>';
-			}
-			
-			// for (var reference in references[category][option]) {
-			// 	out+='<li><img src=\"'+ references[category][option][reference] +'\"></li>';
-			// }
-			out+='</ul>';
-			// }
-			// if (category == "ethnicity" ||category =="body-shape") {
-			button_sec+='<div class="checkbox"><label><input name=\"'
-				+category+'Answer\" type=\"checkbox\" value=\"'+option
-				+'\" />'+option+'</label></div>';
-			// } else {
-				// button_sec+='<div class="checkbox"><label><input name=\"'
-				// 	+category+'Answer\" type=\"checkbox\" value=\"'+option
-				// 	+'\" />'+option+'</label></div>';
-			// }
-		}
-		out+='</div>';
 		if (category == target) {
+			out+='<div class="tag" id="'+category
+				+'"><div class="reference"><p>'+ inst[category] 
+				+'</p>';
+			if (references[category].length >0) {
+				// out+='<h3>For reference: </h3>';
+			}
+			// var button_sec = '<fieldset class=\"'+category +'\">';
+			var button_sec = ''
+			for (var option in references[category]) {
+				// console.log(option);
+				// if (references[category][option].length != 0) {
+				if ((option in tag_exp)) {
+					// out+='<ul class=\"imagewrap\"><legend>'+option+': </legend>';
+				// } else {
+					out+='<ul class=\"imagewrap\"><legend style="width:300px;">'+option+': '+tag_exp[option]+'</legend>';
+				}
+				
+				// for (var reference in references[category][option]) {
+				// 	out+='<li><img src=\"'+ references[category][option][reference] +'\"></li>';
+				// }
+				out+='</ul>';
+				// }
+				// if (category == "ethnicity" ||category =="body-shape") {
+				button_sec+='<div class="checkbox"><label><input name=\"'
+					+category+'Answer\" type=\"checkbox\" value=\"'+option
+					+'\" />'+option+'</label></div>';
+				// } else {
+					// button_sec+='<div class="checkbox"><label><input name=\"'
+					// 	+category+'Answer\" type=\"checkbox\" value=\"'+option
+					// 	+'\" />'+option+'</label></div>';
+				// }
+			}
+			out+='</div>';
+		
 			for (var j = 0; j < PAGES; j++) {
 				out+='<ul id="'+category+j+'">';
 				for (var i = 0; i < ELENUM; i++) {
