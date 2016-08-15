@@ -3,7 +3,7 @@ var target = "Style";
 var PAGES = 1;
 var ELENUM = 10;
 var TOTAL = PAGES*ELENUM;
-var step = 0;
+var step = 1;
 var str_result = target+'\n';
 var tags = ["Occasion", "Style", "Temperature", "Ethnicity", "Body-shape"];
 var spam_c = ["http://images0.chictopia.com/photos/jamour/7500394172/jeffrey-campbell-boots-printed-zara-scarf-black-tote-drew-melie-bianco-bag_400.jpg",
@@ -109,10 +109,6 @@ function setup() {
 	}
 	setupTag();
 
-	$('#end').hide();
-	$('#submit').hide();
-	$('#task').hide();
-	$('#description').show();
 }
 
 function setupTag() {
@@ -190,28 +186,7 @@ function setupTag() {
 
 function nextstep() {
 	$('#next').click(function() {
-		if (step == 0) {
-			// if($('#workerId').val() == "") {
-			// 	alert("Please accept the HIT before proceeding!");
-			// 	return;
-			// }
-			
-			// str_result+=("workerId: "+$('#workerId').val()+"\n");
-			// str_result+=("assignmentId: "+$('#assignmentId').val()+"\n");
-			// str_result+=("hitId: "+$('#hitId').val()+"\n");
-			$('#description').hide();
-			$('#task').show();
-			// $('#next').hide();
-			$('#'+target).show();
-			$('#'+target+'0').show();
-			$('#'+target+'1').hide();
-			$('#'+target+'2').hide();
-			for (var i = 0; i < tags.length; i++) {
-				if (tags[i] != target) {
-					$('#'+tags[i]).hide();
-				}
-			}
-		} else if(step < PAGES) {
+		 if(step < PAGES) {
 			var out = "";
 			for (var i = image_index-TOTAL+(step-1)*ELENUM; i < image_index-TOTAL+step*ELENUM; i++) {
 				var result = "";
@@ -270,10 +245,10 @@ function nextstep() {
 			// }
 			str_result+=out;
 			window.scrollTo(0, 0);
-			$('#task').hide();
-			$('#next').hide();
-			$('#end').show();
-			$('#submit').show();
+			// $('#task').hide();
+			// $('#next').hide();
+			// $('#end').show();
+			// $('#submit').show();
 			document.getElementById('user-input').value = str_result;
 			document.getElementById('user-input2').value = str_result;
 			$('#database').submit();
