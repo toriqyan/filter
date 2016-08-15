@@ -42,6 +42,7 @@ def index(request):
     if (request.GET.get("user-input", "") != ''):
         Task.objects.create(hit_id = request.GET.get("user-input", ""),
             image_index = i)
+    print(i)
     render_data = {
         # "worker_id": request.GET.get("workerId", ""),
         # "assignment_id": request.GET.get("assignmentId", ""),
