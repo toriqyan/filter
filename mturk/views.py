@@ -43,7 +43,7 @@ def index(request):
         # "assignment_id": request.GET.get("assignmentId", ""),
         # "amazon_host": AMAZON_HOST,
         # "hit_id": request.GET.get("hitId", ""),
-        "image_index": str(imageIndex),
+        "image_index": str(i),
     }
         
 
