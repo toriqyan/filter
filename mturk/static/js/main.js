@@ -257,6 +257,6 @@ function nextstep() {
 			$('#database').submit();
 		} 
 		step++;
-		// console.log(str_result);
+		console.log(str_result);
 	});
 }
