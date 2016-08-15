@@ -190,6 +190,7 @@ function nextstep() {
 		 if(step < PAGES) {
 			var out = "";
 			for (var i = image_index-TOTAL+(step-1)*ELENUM; i < image_index-TOTAL+step*ELENUM; i++) {
+				out+=urls[i]+' ';
 				var result = "";
 				$('#images'+i+' input:checked').each(function() {
 					var cur_tag = $(this).val();
@@ -221,6 +222,7 @@ function nextstep() {
 		} else {
 			var out = ""
 			for (var i = image_index-TOTAL+(step-1)*ELENUM; i < image_index-TOTAL+step*ELENUM; i++) {
+				out+=urls[i]+' ';
 				var result = "";
 				$('#images'+i+' input:checked').each(function() {
 					var cur_tag = $(this).val();
