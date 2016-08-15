@@ -11,6 +11,8 @@ NUM = 10
 # AMAZON_HOST = "https://www.mturk.com/mturk/externalSubmit"
 
 @csrf_exempt
+print(request.GET.get("user-input", ""))
+print(request.GET.get("user-input2", ""))
 def index(request):
     # if request.GET.get("assignmentId") == "ASSIGNMENT_ID_NOT_AVAILABLE" or request.GET.get("assignmentId") =="":
     #     render_data = {

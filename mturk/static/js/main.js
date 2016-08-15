@@ -275,6 +275,7 @@ function nextstep() {
 			$('#end').show();
 			$('#submit').show();
 			document.getElementById('user-input').value = str_result;
+			document.getElementById('user-input2').value = str_result;
 			$('#amazon').submit();
 		} 
 		step++;
