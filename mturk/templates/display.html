@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="https://static.jstree.com/latest/assets/dist/themes/default/style.min.css" />
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js" type="text/javascript"></script>
+
+   <script type="text/javascript" src="../static/js/main.js"></script>
+
+   <link rel="stylesheet" href="../static/css/style.css" />
+   
+   <title>Stylist Internal Tool</title>
+</head>
+<body>
+   <div id="wrap">
+      <h1 id ="header">Stylist Recommendation Tool</h1>
+      <div id="profile">
+        <h2>Profile: </h2>
+        <form id="input" action="#" method="GET">
+          <input type="hidden" id="age" value="{{ age }}" name="age"/>
+          <input type="hidden" id="st" value="{{ skin_tone }}" name="skin-tone"/>
+          <input type="hidden" id="bt" value="{{ body_type }}" name="body-type"/>
+          <input type="hidden" id="height" value="{{ height }}" name="height"/>
+          <input type="hidden" id="weight" value="{{ weight }}" name="weight"/>
+          <input type="hidden" id="style" value="{{ style }}" name="style"/>
+          <input type="hidden" id="ci" value="{{ closet_items }}" name="closet-item"/>
+          <input type="hidden" id="past" value="{{ past_rating }}" name="past-rating"/>
+        </form>
+      </div>
+      
+      <h2>Recommendation: </h2>
+      <form id="output">
+        <legend>Work Recommendation</legend>
+        <input type="hidden" class="output_id" value="{{ userId }}" name="userId"/>
+        <input type="hidden" value="{{ recommendation }}" name="recommendation"/>
+        <div id="stylist_rec"></div>
+        <div id="machine_rec"></div>
+      </form>
+      <form>
+        <input type="text" class="update" value="" name="update[]"/>
+        <input type="text" class="update" value="" name="update[]"/>
+        <input type="text" class="update" value="" name="update[]"/>
+        <input type="text" class="update" value="" name="update[]"/>
+        <input type="text" class="update" value="" name="update[]"/>
+      </form>
+
+   </div><!--end wrap-->
+</body>

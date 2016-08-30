@@ -7,34 +7,21 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js" type="text/javascript"></script>
-
-   <script type="text/javascript" src="../static/js/images.js"></script>
-   <script type="text/javascript" src="../static/js/main.js"></script>
+<!-- <script type="text/javascript" src="../static/js/main.js"></script> -->
 
    <link rel="stylesheet" href="../static/css/style.css" />
    
-   <title>Fashion Tags</title>
+   <title>Stylist Recommendation Tool</title>
 </head>
 <body>
-   <form id="amazon" action="#" method="POST">
-      <input type="hidden" id="user-input" value="" name="user-input"/>
-      <!-- <input type="hidden" id="assignmentId" value="{{ assignment_id }}" name="assignmentId"/>
-      <br/>
-      <input type="hidden" id="workerId" value="{{ worker_id }}" name="workerId"/>
-      <input type="hidden" id="hitId" value="{{ hit_id }}" name="hitId"/> -->
-      <input type="submit">
-  </form>
-  <form id="database" action="#" method="GET">
-      <input type="hidden" id="user-input2" value="" name="user-input"/>
-      <input type="hidden" id="imageIndex" value="{{ image_index }}" name="imageIndex"/>
-      <input type="submit">
-   </form>
    <div id="wrap">
-      <h1 id ="header">Tag fashion photos</h1>
+      <h1 id ="header">Stylist Recommendation Tool</h1>
+      <form id ="input" action="#" method="GET">
+         <label>User ID: <input type="text" name="userId"/></label>
+         <!-- <input type="hidden" id="user-profile" value="{{ user-profile }}" name="user-profile"/>
+         <input type="hidden" id="model_rec" value="{{ model_rec }}" name="model_rec"/> -->
+         <input type="submit">
+      </form>
       
-      <div id= "task"></div>
-      <button name="next" id="next" type="button">Next</button>
-      <!-- <h2 id="end">Congrats! The end of task! Please submit!</h2> -->
-      <!-- <button class="pure-button" name="submit" id="submit" onclick="$('#amazon').submit();" type="button">Submit</button> -->
    </div><!--end wrap-->
 </body>
