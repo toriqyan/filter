@@ -22,23 +22,23 @@
          <input type="submit">
       </form>
       <table style="width:100%">
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>UserID</th>
-      </tr>
-      {% if userList %}
-        <tr>
-          {% for user in userList %}
-          <td>{{ user.first_name }}</td>
-          <td>{{ user.last_name }}</td>
-          <td>{{ user.id }}</td>
-          {% endfor %}
-        </tr>
-      {% else %}
-          <strong>There are no images present.</strong>
-      {% endif %}
-    </table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>UserID</th>
+        </tr>
+        {% if userList %}
+          <tr>
+            {% for user in userList %}
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.id }}</td>
+            {% endfor %}
+          </tr>
+        {% else %}
+            <strong>There are no users present.</strong>
+        {% endif %}
+      </table>
       
    </div><!--end wrap-->
 </body>
