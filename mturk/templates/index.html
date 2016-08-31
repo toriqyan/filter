@@ -27,7 +27,17 @@
         <th>Lastname</th>
         <th>UserID</th>
       </tr>
-      <div id="reference"></div>
+      {% if userList %}
+        <tr>
+          {% for user in userList %}
+          <td>{{ user.first_name }}</td>
+          <td>{{ user.last_name }}</td>
+          <td>{{ user.id }}</td>
+          {% endfor %}
+        </tr>
+      {% else %}
+          <strong>There are no images present.</strong>
+      {% endif %}
     </table>
       
    </div><!--end wrap-->
