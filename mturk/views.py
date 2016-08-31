@@ -12,8 +12,8 @@ import ast
 def index(request):
     print("reach")
     # c_line = 'curl -H "Content-Type: application/json" -d '{"key1":"v", "key2":"e", "key3":"t"}' https://wix5uh8vve.execute-api.us-west-2.amazonaws.com/prod/clueless/get-profile-by-id ; echo'
-    # commands = ['curl', '-i', '-H', 'Content-Type: application/json', '-d', '{"key1":"v", "key2":"e", "key3":"t"}', 'https://wix5uh8vve.execute-api.us-west-2.amazonaws.com/prod/clueless/get-profile-by-id', ';', 'echo']
-    # commands = ['curl', '-i', '-H', 'Content-Type: application/json', '-d', str(json.dumps(a)), 'https://wix5uh8vve.execute-api.us-west-2.amazonaws.com/prod/clueless/getoutfitimagesbykeyword', ';', 'echo']
+    # commands = ['curl', '-H', 'Content-Type: application/json', '-d', '{"key1":"v", "key2":"e", "key3":"t"}', 'https://wix5uh8vve.execute-api.us-west-2.amazonaws.com/prod/clueless/get-profile-by-id', ';', 'echo']
+    # commands = ['curl', '-H', 'Content-Type: application/json', '-d', str(json.dumps(a)), 'https://wix5uh8vve.execute-api.us-west-2.amazonaws.com/prod/clueless/getoutfitimagesbykeyword', ';', 'echo']
     # p = subprocess.Popen(commands, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     # out, err = p.communicate()
     # print(out)
@@ -38,8 +38,8 @@ def display(request):
     print(out)
     render_data = {
         "age": age,
-        "skin-tone": skin_tone,
-        "body-type": body_type,
+        "skin_tone": skin_tone,
+        "body_type": body_type,
     }
     response = render_to_response("display.html", render_data)
     # without this header, your iFrame will not render in Amazon

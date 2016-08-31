@@ -16,10 +16,20 @@
 <body>
    <div id="wrap">
       <h1 id ="header">Stylist Recommendation Tool</h1>
+      <input type="hidden" name="userList" value="{{ userList }}"/>
       <form id ="input" action="#" method="GET">
          <label>User ID: <input type="text" name="userId"/></label>
          <input type="submit">
       </form>
+      <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>UserID</th>
+      </tr>
+      <div id="reference"></div>
+    </table>
       
    </div><!--end wrap-->
 </body>
+</html>
