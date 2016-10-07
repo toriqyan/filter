@@ -108,6 +108,10 @@ button {
    vertical-align: center;
 }
 
+#task li {
+
+}
+
 .imagewrap {
    /*top: 400px;
    left: 450px ;*/
@@ -139,14 +143,9 @@ button {
    display: inline-block;
 }
 #task li {
-   display: inline-block;
+   display: inline;
    float:left;
    margin: 10px;
-   width: 30%;
-}
-
-#task label {
-  display: inline-block;
 }
 
 
@@ -154,7 +153,7 @@ button {
    width: 250px;
    /*padding-right: 20px;*/
    display: inline-block;
-   /*float:left;*/
+   float:left;
    /*clear: left;*/
 }
 

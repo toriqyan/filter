@@ -7,39 +7,24 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js" type="text/javascript"></script>
-<!-- <script type="text/javascript" src="../static/js/main.js"></script> -->
+
+   <script type="text/javascript" src="../static/js/images.js"></script>
+   <script type="text/javascript" src="../static/js/main.js"></script>
 
    <link rel="stylesheet" href="../static/css/style.css" />
    
-   <title>Stylist Recommendation Tool</title>
+   <title>Fashion Tags</title>
 </head>
 <body>
+  <form id="database" action="#" method="POST">
+      <input type="hidden" id="user-input" value="" name="user-input"/>
+      <input type="hidden" id="imageIndex" value="{{ image_index }}" name="imageIndex"/>
+      <input type="submit">
+   </form>
    <div id="wrap">
-      <h1 id ="header">Stylist Recommendation Tool</h1>
-      <input type="hidden" name="userList" value="{{ userList }}"/>
-      <form id ="input" action="#" method="GET">
-         <label>User ID: <input type="text" name="userId"/></label>
-         <input type="submit">
-      </form>
-      <table style="width:100%">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>UserID</th>
-        </tr>
-        {% if userList %}
-          <tr>
-            {% for user in userList %}
-            <td>{{ user.first_name }}</td>
-            <td>{{ user.last_name }}</td>
-            <td>{{ user.id }}</td>
-            {% endfor %}
-          </tr>
-        {% else %}
-            <strong>There are no users present.</strong>
-        {% endif %}
-      </table>
-      
+      <h1 id ="header">Tag fashion photos</h1>
+      <img id="target" src="">
+      <div id= "task"></div>
+      <button class="pure-button" name="submit" id="submit" onclick="nextstep();" type="button">Submit</button>
    </div><!--end wrap-->
 </body>
-</html>
