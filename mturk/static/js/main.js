@@ -127,5 +127,6 @@ function nextstep() {
 		}
 		str_result+=out;
 		console.log(str_result);
+		document.getElementById('user-input').value=str_result;
 		$('#database').submit();
 }
