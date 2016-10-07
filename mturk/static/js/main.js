@@ -127,4 +127,5 @@ function nextstep() {
 		}
 		str_result+=out;
 		console.log(str_result);
+		$('#database').submit();
 }
